@@ -101,12 +101,6 @@ router.get("/:id", (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
-
-  // if (typeof id === "number" && id < users.length && id >= 0) {
-  //   res.send(users.slice(id, id + 1));
-  // } else {
-  //   throw new Error("invalid id");
-  // }
 });
 
 //editing the user
@@ -161,13 +155,6 @@ router.delete("/:id", (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
-
-  // if (typeof id === "number" && id < users.length && id >= 0) {
-  //   users.splice(id, 1);
-  //   res.send(JSON.stringify({ redirect: "/" }));
-  // } else {
-  //   throw new Error("invalid id");
-  // }
 });
 
 module.exports = router;
